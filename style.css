@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 16pt;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #664d80;
+  padding: 2em 1em;
+}
+
+header .wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .title {
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: normal;
+}
+
+nav {
+  margin-right: -1em;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  padding: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  box-shadow: 0 0 0.2em 0 hsla(0, 0%, 0%, 0.2);
+  background-color: hsl(0, 0%, 98%);
+  width: 75%;
+  padding: 2em;
+  border-radius: 0.3em;
+}
+
+article:not(:first-child) {
+  margin-top: 2em;
+}
+
+article .title {
+  font-size: 1.5em;
+}
+
+article .social_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+article .social_box .author {
+  color: hsl(0, 0%, 25%);
+}
+
+article .social_box .share {
+  box-shadow: 0 0.1em 0.25em 0 hsla(0, 0%, 0%, 0.2);
+  background-color: white;
+  padding: 0.25em 0.75em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease-in-out;
+}
+
+article .social_box .share:hover {
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 0 0.3em 0.5em 0 hsla(0, 0%, 0%, 0.1);
+}
