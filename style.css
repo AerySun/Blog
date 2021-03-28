@@ -1,51 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
-  margin: 0;
   text-align: center;
-  font-size: 16pt;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #664d80;
-  padding: 2em 1em;
-}
-
-header .wrapper {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .title {
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  font-style: normal;
-}
-
-nav {
-  margin-right: -1em;
-  align-self: flex-end;
-  display: flex;
-  align-items: center;
-}
-
-nav a {
-  padding: 0 1em;
-  color: white;
-  text-decoration: none;
 }
 
 main {
