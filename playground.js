@@ -35,4 +35,29 @@ function fizzbuzz () {
     }
   }
 }
-fizzbuzz()
+// fizzbuzz()
+
+function biify (str) {
+  const vowels = 'aeiou'.split('')
+  // const vowels = [ 'a', 'e', 'i', 'o', 'u' ] <-array
+  let output = ''
+  for (const char of str) {
+    output += char
+    if (vowels.includes(char)) {
+      output += 'bi'
+    }
+  }
+  return output
+}
+console.log(biify('jannik welter Anna'))
+
+function biify2 (str) {
+  let vowels = 'iaeou'
+  vowels = vowels + vowels.toUpperCase()
+  vowels = vowels.split('')
+  for (const vowel of vowels) {
+    str = str.replace(vowel, vowel + 'bi')
+  }
+  return str
+}
+console.log(biify2('jasminnikWeltibir'))
