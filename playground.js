@@ -20,9 +20,9 @@ world += 'rld'
 console.log(world)
 
 function fizzbuzz () {
-  for (let n = 1; n <= 30; n++) {
-    const isFizz = n % 3 === 0
-    const isBuzz = n % 5 === 0
+  for (let n = 1; n <= 30; n++) { // n++ number + 1
+    const isFizz = n % 3 === 0 //= == ist gleich   ./division
+    const isBuzz = n % 5 === 0 //! == ungleich     .% restdivision
     const isFizzbuzz = isFizz && isBuzz
     if (isFizzbuzz) {
       console.log('fizzbuzz')
@@ -74,3 +74,27 @@ function unbiify (str) {
   return str
 }
 console.log(unbiify(biify2('Elyas E Barek')))
+
+// object    / alt+up or down =move up o down
+const person = {
+  name: 'Marco',
+  age: 24,
+  gender: 'M'
+}
+person.name = 'Stev'
+console.log(`My name is ${person.name} and i am ${person.age} years old`)
+
+class Person {
+  constructor (name, age) {
+    this.name = name
+    this.age = age
+  }
+
+  sayName () {
+    console.log(`Hello, my name is ${this.name} and im ${this.age} years young`)
+  }
+}
+const marco = new Person('Marco', 24)
+const neosh = new Person('Neosh', 2)
+marco.sayName()
+neosh.sayName()
