@@ -56,8 +56,21 @@ function biify2 (str) {
   vowels = vowels + vowels.toUpperCase()
   vowels = vowels.split('')
   for (const vowel of vowels) {
-    str = str.replace(vowel, vowel + 'bi')
+    str = str.replaceAll(vowel, vowel + 'bi')
   }
   return str
 }
-console.log(biify2('jasminnikWeltibir'))
+console.log(biify2('Elyas M Barek'))
+
+function unbiify (str) {
+  const vowels = 'aeiouAEIOU'.split('')
+  // ITER(iteration=wiederholung) 1: const vowel = 'a'
+  //         str = str.replaceAll('a' + 'bi', 'a')
+  // ITER 2: const vowel = 'e'
+  //         str = str.replaceAll('e' + 'bi', 'e')
+  for (const vowel of vowels) {
+    str = str.replaceAll(vowel + 'bi', vowel)
+  }
+  return str
+}
+console.log(unbiify(biify2('Elyas E Barek')))
