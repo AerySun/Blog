@@ -49,7 +49,7 @@ function biify (str) {
   }
   return output
 }
-console.log(biify('jannik welter Anna'))
+console.log(biify('pfirsisch Anna'))
 
 function biify2 (str) {
   let vowels = 'iaeou'
@@ -98,3 +98,12 @@ const marco = new Person('Marco', 24)
 const neosh = new Person('Neosh', 2)
 marco.sayName()
 neosh.sayName()
+
+function reversedbiify (str) {
+  const vowels = 'iaeouAEIOU'.split('')
+  for (const vowel of vowels) {
+    str = str.replaceAll(vowel, 'bi' + vowel)
+  }
+  return str
+}
+console.log(reversedbiify('Marco, Yoshi, Neosh'))
