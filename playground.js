@@ -107,3 +107,15 @@ function reversedbiify (str) {
   return str
 }
 console.log(reversedbiify('Marco, Yoshi, Neosh'))
+
+// textarea counter, on max 50
+const textarea = document.querySelector('textarea')
+const count = document.getElementById('count')
+const maxLength = 50
+textarea.addEventListener('input', () => {
+  const remaining = maxLength - textarea.value.length
+  if (remaining < 0) {
+    textarea.value = textarea.value.slice(0, maxLength)
+  }
+  count.textContent = `${textarea.value.length} / ${maxLength}`
+})
