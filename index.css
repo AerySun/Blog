@@ -19,7 +19,7 @@ article {
   border-radius: 0.3em;
 }
 
-article:not(:first-child) {
+article:not(:first-child) { 
   margin-top: 2em;
 }
 

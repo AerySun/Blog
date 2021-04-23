@@ -108,7 +108,7 @@ function reversedbiify (str) {
 }
 console.log(reversedbiify('Marco, Yoshi, Neosh'))
 
-// textarea counter, on max 50
+// textarea counter, on max 50 /
 const textarea = document.querySelector('textarea')
 const count = document.getElementById('count')
 const maxLength = 50
